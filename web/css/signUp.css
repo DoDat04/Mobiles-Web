@@ -1,0 +1,160 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Aug 18, 2024, 4:14:22 PM
+    Author     : Do Dat
+*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+}
+
+.login-form, .image-container {
+    flex-basis: 50%;
+}
+
+.login-form {
+    padding: 2rem;
+}
+
+.login-form h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.login-form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: 700;
+}
+
+.login-form input[type="email"],
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-form input[type="checkbox"] {
+    margin-right: 0.5rem;
+    transform: scale(1.2);
+}
+
+.login-form .btn {
+    display: block;
+    width: 105%;
+    padding: 0.75rem;
+    border: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.login-form .btn:hover {
+    background-color: #333;
+}
+
+.already-account {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sign-in-link {
+    font-weight: bold;
+    color: black;
+}
+
+.sign-in-link:hover {
+    text-decoration: underline;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+}
+
+.terms a {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.image-container {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: -50px auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative; /* Added for the close button to be positioned correctly */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+

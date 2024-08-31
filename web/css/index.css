@@ -1,0 +1,372 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Aug 8, 2024, 1:57:36 AM
+    Author     : Do Dat
+*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CAROUSEL */
+.carousel{
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+.carousel .item img {
+    height: 620px; /* Để hình ảnh tự động điều chỉnh chiều cao */
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của item */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Dấu chấm */
+.carousel .owl-theme .owl-dots .owl-dot span {
+    background-color: white; /* Nền trắng */
+    border: 2px solid #E40730; /* Viền đỏ */
+    width: 18px; /* Đường kính dấu chấm */
+    height: 18px; /* Đường kính dấu chấm */
+    border-radius: 50%; /* Hình tròn */
+    display: inline-block; /* Đảm bảo dấu chấm nằm ngang hàng */
+    margin: 0 5px; /* Khoảng cách giữa các dấu chấm */
+    vertical-align: middle; /* Căn chỉnh dọc */
+}
+
+/* Dấu chấm đang được chọn */
+.carousel .owl-theme .owl-dots .owl-dot.active span {
+    background-color: #E40730; /* Màu nền đỏ khi chọn */
+    border: 2px solid #E40730; /* Viền đỏ khi chọn (có thể bỏ nếu không cần viền khi chọn) */
+}
+
+/* Trung tâm của dấu chấm (tuỳ chọn) */
+.carousel .owl-theme .owl-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* Căn giữa dấu chấm */
+    width: auto;
+    text-align: center;
+}
+
+/* CSS */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #3498db; /* Example color */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none; /* Hide the dropdown content by default */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block; /* Show the dropdown content */
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-links {
+    display: flex;
+    align-items: center;
+}
+
+.auth-link {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.auth-link:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.separator {
+    margin: 0 10px; /* Khoảng cách giữa các phần tử */
+    font-size: 25px;
+}
+
+.cart-icon {
+    font-size: 25px; /* Kích thước biểu tượng giỏ hàng */
+    position: relative;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: 215px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.account_dropdown_menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 0;
+    box-shadow: 0 0 10px #0000001a;
+    width: 260px;
+    z-index: 1000;
+    left: -2px;
+    top: 35px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.account_dropdown_menu.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0px);
+}
+.account_dropdown_menu .dropdown-item {
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+.account_dropdown_menu .dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+.account_hr_guest {
+    margin: 0;
+    border-top: 1px solid #ddd;
+}
+.auth-links {
+    position: relative;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 40px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 3px;
+    right: 9px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    color: green;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Review Section */
+.comment-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.comment-section form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    resize: vertical;
+}
+
+.comment-section form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-section form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Comments Display */
+.comments-display {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comments-display h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.comment:last-child {
+    border-bottom: none;
+}
+
+.comment p {
+    margin: 5px 0;
+}
+
+.comment p strong {
+    color: #007bff;
+}
+
+.comment p em {
+    color: #666;
+    font-style: italic;
+}
+
+/* BACK TO TOP */
+.backToTop {
+    bottom: 50px;
+    right: 50px;
+    position: fixed;
+    color: #0BBBCC;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #0BBBCC;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    /* Ẩn nút button ở đầu trang */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s; /* Thêm hiệu ứng chuyển tiếp */
+}
+
+/* Hiện nút button */
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Opacity giảm khi kéo chuột xuống */
+.cd-top--fade-out {
+    opacity: 0.8;
+}
+
+.backToTop i {
+    padding-left: 2px;
+}

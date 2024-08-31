@@ -1,0 +1,125 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Aug 13, 2024, 7:57:43 PM
+    Author     : Do Dat
+*/
+/* Existing CSS rules */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.address {
+    display: flex;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.select-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.select-container select {
+    padding: 8px;
+    font-size: 16px;
+    width: 240px;
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.select-container .separator {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: gray;
+    pointer-events: none;
+}
+
+
+.address select {
+    padding: 8px;
+    font-size: 16px;
+    width: 247px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logout {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    margin-left: auto;
+}
+
+.logout:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.text-header input {
+    width: 39.5%;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.account_dropdown_menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 0;
+    box-shadow: 0 0 10px #0000001a;
+    width: 260px;
+    z-index: 1000;
+    left: -225px;
+    top: 35px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.account_dropdown_menu.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0px);
+}
+.account_dropdown_menu .dropdown-item {
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+.account_dropdown_menu .dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+.account_hr_guest {
+    margin: 0;
+    border-top: 1px solid #ddd;
+}
+.auth-links {
+    position: relative;
+}
+.auth-link {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+}

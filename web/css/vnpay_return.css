@@ -1,0 +1,76 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Aug 31, 2024, 4:24:23 PM
+    Author     : Do Dat
+*/
+/* Styles for the notification */
+.mail-notification {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.notification {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.notification svg {
+    width: 100px;
+    height: 100px;
+}
+
+.notification h2 {
+    margin: 10px 0 0;
+    color: #333;
+}
+
+.back-to-home {
+    position: fixed;
+    color: black;
+    top: 40%;
+    left: 41%;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.back-to-home:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
+/* Animation for drawing the checkmark */
+.checkmark {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: draw 2s ease forwards;
+}
+
+/* Animation for drawing the X mark */
+.xmark line {
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    animation: draw 2s ease forwards;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
