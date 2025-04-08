@@ -23,14 +23,18 @@ Hệ thống hỗ trợ đăng nhập bằng **Google hoặc tài khoản riêng
 - Chỉnh sửa thông tin cá nhân
 - Xem lịch sử mua hàng
 
-### 💳 4. Thanh toán
+### 🧺 4. Giỏ hàng
+- **Lưu trữ giỏ hàng bằng cookie** kể cả khi chưa đăng nhập
+- Thêm, xoá, cập nhật số lượng sản phẩm trong giỏ
+
+### 💳 5. Thanh toán
 - Thanh toán trực tuyến bằng **VNPAY**
 - Nhận email xác nhận đơn hàng sau khi thanh toán
 
-### 📨 5. Tích hợp Email
+### 📨 6. Tích hợp Email
 - Gửi email thông báo khi mua hàng thành công
 
-### 📍 6. API địa chỉ tỉnh/thành
+### 📍 7. API địa chỉ tỉnh/thành
 - Chọn địa chỉ giao hàng qua dropdown: **Tỉnh/Thành → Quận/Huyện → Phường/Xã**
 
 ---
